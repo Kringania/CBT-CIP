@@ -1,0 +1,44 @@
+import pandas as pd 
+
+df=pd.read_excel(r'C:\Users\91881\Downloads\Unemployment_Rate_upto_11_2020.xlsx')
+df
+
+type(df)
+
+df.head()
+
+df.tail()
+
+df.info()
+
+df.columns
+
+df.shape
+
+df.describe()
+
+df.isna().sum()
+
+
+import pandas as pd
+
+df1=pd.read_excel(r'C:\Users\91881\Downloads\Unemployment in India.xlsx')
+df1
+
+type(df1)
+
+df1.iloc[50:70]
+
+df1.loc[:,['Region','Estimated Unemployment Rate (%)']]
+
+df1.head()
+
+df1.tail()
+
+df1.info
+
+df1.columns
+
+df1.shape
+
+df1.describe()
