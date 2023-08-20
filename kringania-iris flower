@@ -1,0 +1,43 @@
+import pandas as pd
+
+df=pd.read_excel(r'C:\Users\91881\OneDrive\Documents\irisflower.xlsx')
+df
+
+type (df)
+
+df.loc[79]
+
+df.head()
+
+df.tail()
+
+df.info()
+
+df.columns
+
+df.shape
+
+df.index
+
+df=df[['Species','SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+df
+
+df=df.rename(columns={'SepalLengthCm':'Sepal Length','SepalWidthCm':'Sepal Width','PetalLengthCm':'Petal Length','PetalWidthCm':'Petal Width'})
+df
+
+df[0:11]
+
+df.iloc[40:50,:]
+
+df['Species']
+
+df.describe()
+
+from matplotlib import pyplot as plt
+
+#boxplot
+one=df['SepalLengthCm']
+two=df['PetalLengthCm']
+data=list([one,two])
+plt.boxplot(data)
+plt.show()
