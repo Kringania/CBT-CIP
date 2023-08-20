@@ -19,6 +19,20 @@ df.describe()
 
 df.isna().sum()
 
+from matplotlib import pyplot as plt
+
+#create a line plot
+
+plt.figure(figsize=(10,6))
+plt.plot(df['Date'],df['Estimated Unemployment Rate (%)'],color='b')
+plt.title('Unemployment Rate During COVID-19')
+plt.xlabel('Date')
+plt.ylabel('Estimated Unemployment Rate (%)')
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()   
+
 
 import pandas as pd
 
